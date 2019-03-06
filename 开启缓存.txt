@@ -1,0 +1,554 @@
+Xshell 6 (Build 0085)
+Copyright (c) 2002 NetSarang Computer, Inc. All rights reserved.
+
+Type `help' to learn how to use Xshell prompt.
+[D:\~]$ 
+
+Connecting to 192.168.10.52:22...
+Connection established.
+To escape to local shell, press 'Ctrl+Alt+]'.
+
+Last login: Mon Mar  4 18:17:43 2019 from 192.168.88.179
+[srmweb@SRM-Tomcat-AMQ ~]$ 
+[srmweb@SRM-Tomcat-AMQ ~]$ 
+[srmweb@SRM-Tomcat-AMQ ~]$ 
+[srmweb@SRM-Tomcat-AMQ ~]$ 
+[srmweb@SRM-Tomcat-AMQ ~]$ ll
+总用量 0
+drwxr-xr-x. 2 srmweb web 6 7月  29 2018 公共
+drwxr-xr-x. 2 srmweb web 6 7月  29 2018 模板
+drwxr-xr-x. 2 srmweb web 6 7月  29 2018 视频
+drwxr-xr-x. 2 srmweb web 6 7月  29 2018 图片
+drwxr-xr-x. 2 srmweb web 6 7月  29 2018 文档
+drwxr-xr-x. 2 srmweb web 6 7月  29 2018 下载
+drwxr-xr-x. 2 srmweb web 6 7月  29 2018 音乐
+drwxr-xr-x. 2 srmweb web 6 7月  29 2018 桌面
+[srmweb@SRM-Tomcat-AMQ ~]$ df -h
+文件系统                     容量  已用  可用 已用% 挂载点
+/dev/mapper/cl-root           50G  6.3G   44G   13% /
+devtmpfs                     3.9G     0  3.9G    0% /dev
+tmpfs                        3.9G   84K  3.9G    1% /dev/shm
+tmpfs                        3.9G   57M  3.8G    2% /run
+tmpfs                        3.9G     0  3.9G    0% /sys/fs/cgroup
+/dev/sda1                   1014M  173M  842M   18% /boot
+/dev/mapper/cl-home           42G   42M   42G    1% /home
+/dev/mapper/vg--web-lv--web  394G  5.9G  368G    2% /u01
+192.168.10.53:/u01           1.5T   24G  1.4T    2% /u01/srmweb/webapp/uploads
+tmpfs                        783M   16K  783M    1% /run/user/42
+tmpfs                        783M     0  783M    0% /run/user/0
+tmpfs                        783M     0  783M    0% /run/user/1001
+[srmweb@SRM-Tomcat-AMQ ~]$ cd /u01/
+[srmweb@SRM-Tomcat-AMQ u01]$ ls
+lost+found  srmweb
+[srmweb@SRM-Tomcat-AMQ u01]$ cd srmweb/
+[srmweb@SRM-Tomcat-AMQ srmweb]$ ls
+webapp  webapp.bak  webapp.tgz
+[srmweb@SRM-Tomcat-AMQ srmweb]$ ll
+总用量 544056
+drwxr-xr-x. 12 srmweb web      4096 2月  28 23:48 webapp
+drwxr-xr-x.  6 srmweb web      4096 9月   8 2017 webapp.bak
+-rw-r--r--.  1 srmweb web 557098537 9月   7 2017 webapp.tgz
+[srmweb@SRM-Tomcat-AMQ srmweb]$ cd webapp
+[srmweb@SRM-Tomcat-AMQ webapp]$ ls
+1#tomcat  2#tomcat  3#tomcat  amq  logs  logs_bak_20190228  uploads  webRoot  webRoot_bak_20190228  webRootJob
+[srmweb@SRM-Tomcat-AMQ webapp]$ ll
+总用量 56260
+drwxr-xr-x. 10 srmweb web     4096 2月  28 22:01 1#tomcat
+drwxr-xr-x.  9 srmweb web     4096 9月   8 2017 2#tomcat
+drwxr-xr-x.  9 srmweb web     4096 3月   8 2018 3#tomcat
+drwxr-xr-x. 11 srmweb web     4096 8月  21 2017 amq
+drwxr-xr-x.  3 srmweb web  3567616 3月   4 20:55 logs
+drwxr-xr-x.  3 srmweb web 53944320 2月  28 17:07 logs_bak_20190228
+drwxr-xr-x.  6 srmweb web     4096 1月   2 09:02 uploads
+drwxr-x---. 21 srmweb web    12288 5月   7 2018 webRoot
+drwxr-x---. 21 srmweb web    12288 2月  28 23:27 webRoot_bak_20190228
+drwxr-x---. 21 srmweb web    12288 3月   8 2018 webRootJob
+[srmweb@SRM-Tomcat-AMQ webapp]$ cd webRoot
+[srmweb@SRM-Tomcat-AMQ webRoot]$ ls
+aboutUs.screen                        home.html                                                  pur_rfx_check_price_sso.screen
+api5010_doucment_list.screen          home.screen                                                refresh_prompts.screen
+appt_product_demo_book_mobile.screen  images                                                     resource
+appt_product_demo_book.screen         index                                                      robots.txt
+atm_delete.svc                        ios-backend-config-milk.xml                                role_select2_background.png
+atm_download_free.svc                 ios-backend-config-sprite.xml                              role_select_for_ios.svc
+atm_download.svc                      ios-backend-config.xml                                     role_select_ipad.screen
+atm_upload.svc                        javascripts                                                role_select_min.screen
+attached                              kindeditor                                                 role_select_old.screen
+attachment_file_download.screen       loading.screen                                             role_select.screen
+attachment_file_upload.screen         load_main_tab.screen                                       role_select.svc
+baidu-verify-038000C920.txt           login_ipad.screen                                          services
+bid_entrustment_detail_sso.screen     login_ipad.svc                                             set_trace_flag.svc
+bulletin_upload_images                login_iphone.svc                                           show_detail_list_announcement.screen
+chart.screen                          login_news.screen                                          show_detail_list_help_center.screen
+check_uploadFile_for_prequal.screen   login_old.screen                                           show_detail_list_news.screen
+check_uploadFile.screen               login.screen                                               show_detail_list_whitehanded.screen
+classfind.jsp                         login_service_center_aboutUs.screen                        show_trace_flag.svc
+common_query.svc                      login_service_center_newer.screen                          srm_app_url_config.xml
+component                             login_service_center_norQuesInStep.screen                  srm_background.png
+css                                   login_service_center_norQues.screen                        sys_curd.screen
+current_function_code_in_session.svc  login_service_center.screen                                sys_curd.svc
+customization                         login_sso.screen                                           sys_graphics_editor.screen
+document-center.screen                login_sso.svc                                              sys_graphics_preview.screen
+download_attachment_sso.screen        login.svc                                                  sys_graphics_update.svc
+email_verification.screen             login_timeout.screen                                       sys_lov.screen
+error_page                            login_us.screen                                            sys_lov.svc
+error_repeatlogin.screen              login_window.screen                                        sys_menutree_select.screen
+error_screen_page_not_exists.screen   login_window.svc                                           sys_multiLov.screen
+error_screen_unauthorized.screen      logout_iphone.svc                                          test.html
+error_screen_unregistered.screen      logout.svc                                                 theme_select.screen
+error_session_expired.screen          log.screen                                                 timeout_login.svc
+error_wrong_entrance.screen           log_window.screen                                          tomcat.jsp
+example.html                          main1.screen                                               transdata.svc
+ext_dom_study.screen                  main_old.screen                                            tree.screen
+ext_study.screen                      mainpage_facility                                          tree_transform.svc
+favicon.ico                           main.screen                                                ueditor-jsp
+file_manager_json.jsp                 main.screen.bak                                            update_self_password.screen
+first_login_alter_pwd.screen          main.screen.bk                                             update_self_passwrod.svc
+fnd_2130_inv_period.screen            Microsoft_Office_Professional_Plus_2013_64Bit_ChnSimp.zip  uploadFile.screen
+fnd_interface_templates.screen        modules                                                    UPLOADIMG
+fonts                                 openplatform-content.screen                                upload_json.jsp
+forgot_password_help.screen           p2p                                                        upload.screen
+forgot_password_reset.screen          password_expired_update.screen                             uploadtest.screen
+forgot_password.screen                password_expired_update.svc                                WEB-INF
+forgotPassword.screen                 password_reset_success.screen                              welcome.screen
+get_info_mess.svc                     phone_verification.screen                                  WFL1001.zip
+grid_bg.gif                           PUR5180.zip
+hand-openplatform.screen              pur_com_supplier_detail_sso.screen
+[srmweb@SRM-Tomcat-AMQ webRoot]$ cd WEB-INF/
+[srmweb@SRM-Tomcat-AMQ WEB-INF]$ ls
+aurora.database     aurora.plugin.export.word  aurora.plugin.sap     aurora.security  classes        ui.template              uncertain.xml
+aurora.feature      aurora.plugin.hcloud.csv   aurora.plugin.weixin  aurora.ui        lib            uncertain.local.xml      uncertain.xml.bak
+aurora.feature.bak  aurora.plugin.quartz       aurora.presentation   cacheConfig_bak  server-script  uncertain.local.xml.bak  web.xml
+[srmweb@SRM-Tomcat-AMQ WEB-INF]$ ll
+总用量 84
+drwxr-x---.  2 srmweb web 4096 2月  28 22:42 aurora.database
+drwxr-x---.  2 srmweb web 4096 2月  28 23:32 aurora.feature
+drwxr-x---.  2 srmweb web 4096 2月  28 23:30 aurora.feature.bak
+drwxr-x---.  2 srmweb web 4096 8月  26 2016 aurora.plugin.export.word
+drwxr-x---.  2 srmweb web 4096 3月  17 2016 aurora.plugin.hcloud.csv
+drwxr-x---.  2 srmweb web 4096 3月   1 07:59 aurora.plugin.quartz
+drwxr-x---.  2 srmweb web 4096 4月  22 2016 aurora.plugin.sap
+drwxr-x---.  2 srmweb web 4096 9月  15 2015 aurora.plugin.weixin
+drwxr-x---.  2 srmweb web 4096 11月 17 2015 aurora.presentation
+drwxr-x---.  2 srmweb web 4096 11月 17 2015 aurora.security
+drwxr-x---.  4 srmweb web 4096 11月 17 2015 aurora.ui
+drwxr-x---.  2 srmweb web 4096 11月 17 2015 cacheConfig_bak
+drwxr-x---. 65 srmweb web 4096 11月 13 2017 classes
+drwxr-x---.  3 srmweb web 4096 8月  25 2017 lib
+drwxr-x---.  2 srmweb web 4096 2月  28 2017 server-script
+drwxr-x---.  4 srmweb web 4096 11月 17 2015 ui.template
+-rwxr-x---.  1 srmweb web  218 9月   8 2017 uncertain.local.xml
+-rw-r--r--.  1 srmweb web  238 2月  10 2017 uncertain.local.xml.bak
+-rwxr-x---.  1 srmweb web  870 1月  19 2016 uncertain.xml
+-rw-r--r--.  1 srmweb web  949 2月  10 2017 uncertain.xml.bak
+-rw-r--r--.  1 srmweb web 2852 1月   5 2018 web.xml
+[srmweb@SRM-Tomcat-AMQ WEB-INF]$ mv cacheConfig_bak cacheConfig
+[srmweb@SRM-Tomcat-AMQ WEB-INF]$ ls
+aurora.database     aurora.plugin.export.word  aurora.plugin.sap     aurora.security  classes        ui.template              uncertain.xml
+aurora.feature      aurora.plugin.hcloud.csv   aurora.plugin.weixin  aurora.ui        lib            uncertain.local.xml      uncertain.xml.bak
+aurora.feature.bak  aurora.plugin.quartz       aurora.presentation   cacheConfig      server-script  uncertain.local.xml.bak  web.xml
+[srmweb@SRM-Tomcat-AMQ WEB-INF]$ cd aurora.feature
+[srmweb@SRM-Tomcat-AMQ aurora.feature]$ ls
+88**0b0901000028b8??*                   bm-cached-data.config                       request-record.config    service-logging.config    soap.config
+88**0b0901000028b8??**0800000000022d??  cache-based-resource-access-checker.config  response-cache.config    service-lookup.config
+application.config                      cache.config                                service-listener.config  service-procedure.config
+bm-access.config                        msg.config                                  service-lock.config      service-prompt.config
+[srmweb@SRM-Tomcat-AMQ aurora.feature]$ ll -t
+总用量 60
+-rw-r--r--. 1 srmweb web    0 2月  28 23:32 88**0b0901000028b8??**0800000000022d??
+-rw-r--r--. 1 srmweb web    0 2月  28 23:32 88**0b0901000028b8??*
+-rw-r--r--. 1 srmweb web  153 2月  28 23:29 service-prompt.config
+-rw-r--r--. 1 srmweb web 2486 2月  28 23:28 service-procedure.config
+-rw-r--r--. 1 srmweb web  265 2月  28 23:28 cache-based-resource-access-checker.config
+-rw-r--r--. 1 srmweb web  324 9月  13 2017 application.config
+-rwxr-x---. 1 srmweb web  961 9月   8 2017 msg.config
+-rw-r--r--. 1 srmweb web  529 11月 28 2016 service-logging.config
+-rw-r--r--. 1 srmweb web  910 11月 18 2016 service-listener.config
+-rwxr-x---. 1 srmweb web  508 9月  14 2014 soap.config
+-rwxr-x---. 1 srmweb web  110 8月  27 2014 bm-access.config
+-rwxr-x---. 1 srmweb web   48 8月  27 2014 bm-cached-data.config
+-rwxr-x---. 1 srmweb web  770 8月  27 2014 cache.config
+-rwxr-x---. 1 srmweb web   60 8月  27 2014 request-record.config
+-rwxr-x---. 1 srmweb web  183 8月  27 2014 response-cache.config
+-rwxr-x---. 1 srmweb web  158 8月  27 2014 service-lock.config
+-rwxr-x---. 1 srmweb web  258 8月  27 2014 service-lookup.config
+[srmweb@SRM-Tomcat-AMQ aurora.feature]$ mkdir backup
+[srmweb@SRM-Tomcat-AMQ aurora.feature]$ ls
+88**0b0901000028b8??*                   bm-cached-data.config                       response-cache.config    service-procedure.config
+88**0b0901000028b8??**0800000000022d??  cache-based-resource-access-checker.config  service-listener.config  service-prompt.config
+application.config                      cache.config                                service-lock.config      soap.config
+backup                                  msg.config                                  service-logging.config
+bm-access.config                        request-record.config                       service-lookup.config
+[srmweb@SRM-Tomcat-AMQ aurora.feature]$ mv service-prompt.config service-procedure.config cache-based-resource-access-checker.config backup/
+[srmweb@SRM-Tomcat-AMQ aurora.feature]$ cd ..
+[srmweb@SRM-Tomcat-AMQ WEB-INF]$ ls
+aurora.database     aurora.plugin.export.word  aurora.plugin.sap     aurora.security  classes        ui.template              uncertain.xml
+aurora.feature      aurora.plugin.hcloud.csv   aurora.plugin.weixin  aurora.ui        lib            uncertain.local.xml      uncertain.xml.bak
+aurora.feature.bak  aurora.plugin.quartz       aurora.presentation   cacheConfig      server-script  uncertain.local.xml.bak  web.xml
+[srmweb@SRM-Tomcat-AMQ WEB-INF]$ cd ..
+[srmweb@SRM-Tomcat-AMQ webRoot]$ ls
+aboutUs.screen                        home.html                                                  pur_rfx_check_price_sso.screen
+api5010_doucment_list.screen          home.screen                                                refresh_prompts.screen
+appt_product_demo_book_mobile.screen  images                                                     resource
+appt_product_demo_book.screen         index                                                      robots.txt
+atm_delete.svc                        ios-backend-config-milk.xml                                role_select2_background.png
+atm_download_free.svc                 ios-backend-config-sprite.xml                              role_select_for_ios.svc
+atm_download.svc                      ios-backend-config.xml                                     role_select_ipad.screen
+atm_upload.svc                        javascripts                                                role_select_min.screen
+attached                              kindeditor                                                 role_select_old.screen
+attachment_file_download.screen       loading.screen                                             role_select.screen
+attachment_file_upload.screen         load_main_tab.screen                                       role_select.svc
+baidu-verify-038000C920.txt           login_ipad.screen                                          services
+bid_entrustment_detail_sso.screen     login_ipad.svc                                             set_trace_flag.svc
+bulletin_upload_images                login_iphone.svc                                           show_detail_list_announcement.screen
+chart.screen                          login_news.screen                                          show_detail_list_help_center.screen
+check_uploadFile_for_prequal.screen   login_old.screen                                           show_detail_list_news.screen
+check_uploadFile.screen               login.screen                                               show_detail_list_whitehanded.screen
+classfind.jsp                         login_service_center_aboutUs.screen                        show_trace_flag.svc
+common_query.svc                      login_service_center_newer.screen                          srm_app_url_config.xml
+component                             login_service_center_norQuesInStep.screen                  srm_background.png
+css                                   login_service_center_norQues.screen                        sys_curd.screen
+current_function_code_in_session.svc  login_service_center.screen                                sys_curd.svc
+customization                         login_sso.screen                                           sys_graphics_editor.screen
+document-center.screen                login_sso.svc                                              sys_graphics_preview.screen
+download_attachment_sso.screen        login.svc                                                  sys_graphics_update.svc
+email_verification.screen             login_timeout.screen                                       sys_lov.screen
+error_page                            login_us.screen                                            sys_lov.svc
+error_repeatlogin.screen              login_window.screen                                        sys_menutree_select.screen
+error_screen_page_not_exists.screen   login_window.svc                                           sys_multiLov.screen
+error_screen_unauthorized.screen      logout_iphone.svc                                          test.html
+error_screen_unregistered.screen      logout.svc                                                 theme_select.screen
+error_session_expired.screen          log.screen                                                 timeout_login.svc
+error_wrong_entrance.screen           log_window.screen                                          tomcat.jsp
+example.html                          main1.screen                                               transdata.svc
+ext_dom_study.screen                  main_old.screen                                            tree.screen
+ext_study.screen                      mainpage_facility                                          tree_transform.svc
+favicon.ico                           main.screen                                                ueditor-jsp
+file_manager_json.jsp                 main.screen.bak                                            update_self_password.screen
+first_login_alter_pwd.screen          main.screen.bk                                             update_self_passwrod.svc
+fnd_2130_inv_period.screen            Microsoft_Office_Professional_Plus_2013_64Bit_ChnSimp.zip  uploadFile.screen
+fnd_interface_templates.screen        modules                                                    UPLOADIMG
+fonts                                 openplatform-content.screen                                upload_json.jsp
+forgot_password_help.screen           p2p                                                        upload.screen
+forgot_password_reset.screen          password_expired_update.screen                             uploadtest.screen
+forgot_password.screen                password_expired_update.svc                                WEB-INF
+forgotPassword.screen                 password_reset_success.screen                              welcome.screen
+get_info_mess.svc                     phone_verification.screen                                  WFL1001.zip
+grid_bg.gif                           PUR5180.zip
+hand-openplatform.screen              pur_com_supplier_detail_sso.screen
+[srmweb@SRM-Tomcat-AMQ webRoot]$ cd ..
+[srmweb@SRM-Tomcat-AMQ webapp]$ ls
+1#tomcat  2#tomcat  3#tomcat  amq  logs  logs_bak_20190228  uploads  webRoot  webRoot_bak_20190228  webRootJob
+[srmweb@SRM-Tomcat-AMQ webapp]$ ll
+总用量 56260
+drwxr-xr-x. 10 srmweb web     4096 2月  28 22:01 1#tomcat
+drwxr-xr-x.  9 srmweb web     4096 9月   8 2017 2#tomcat
+drwxr-xr-x.  9 srmweb web     4096 3月   8 2018 3#tomcat
+drwxr-xr-x. 11 srmweb web     4096 8月  21 2017 amq
+drwxr-xr-x.  3 srmweb web  3567616 3月   4 20:55 logs
+drwxr-xr-x.  3 srmweb web 53944320 2月  28 17:07 logs_bak_20190228
+drwxr-xr-x.  6 srmweb web     4096 1月   2 09:02 uploads
+drwxr-x---. 21 srmweb web    12288 5月   7 2018 webRoot
+drwxr-x---. 21 srmweb web    12288 2月  28 23:27 webRoot_bak_20190228
+drwxr-x---. 21 srmweb web    12288 3月   8 2018 webRootJob
+[srmweb@SRM-Tomcat-AMQ webapp]$ mv webRoot_bak_20190228/W
+WEB-INF/     WFL1001.zip  
+[srmweb@SRM-Tomcat-AMQ webapp]$ mv webRoot_bak_20190228/W
+WEB-INF/     WFL1001.zip  
+[srmweb@SRM-Tomcat-AMQ webapp]$ mv webRoot_bak_20190228/WEB-INF/aurora.feature/service-pro
+service-procedure.config  service-prompt.config     
+[srmweb@SRM-Tomcat-AMQ webapp]$ mv webRoot_bak_20190228/WEB-INF/aurora.feature/service-pro
+service-procedure.config  service-prompt.config     
+[srmweb@SRM-Tomcat-AMQ webapp]$ mv webRoot_bak_20190228/WEB-INF/aurora.feature/service-pro* webRoot/WEB-INF/aurora.feature
+[srmweb@SRM-Tomcat-AMQ webapp]$ cp webRoot_bak_20190228/WEB-INF/aurora.feature/cache-based-resource-access-checker.config webRoot/WEB-INF/aurora.feature[srmweb@SRM-Tomcat-AMQ webapp]$ cp webRoot/WEB-INF/aurora.feature/service-pro
+service-procedure.config  service-prompt.config     
+[srmweb@SRM-Tomcat-AMQ webapp]$ cp webRoot/WEB-INF/aurora.feature/service-pro* webRoot_bak_20190228/WEB-INF/aurora.feature/
+[srmweb@SRM-Tomcat-AMQ webapp]$ ls
+1#tomcat  2#tomcat  3#tomcat  amq  logs  logs_bak_20190228  uploads  webRoot  webRoot_bak_20190228  webRootJob
+[srmweb@SRM-Tomcat-AMQ webapp]$ cd 1#tomcat/logs
+[srmweb@SRM-Tomcat-AMQ logs]$ ls
+catalina.2019-02-28.log      localhost.2019-02-28.log  localhost_access_log.2019-02-28.txt  manager.2019-02-28.log
+catalina.2019-03-04.log      localhost.2019-03-01.log  localhost_access_log.2019-03-01.txt  manager.2019-03-04.log
+catalina.out                 localhost.2019-03-02.log  localhost_access_log.2019-03-02.txt
+host-manager.2019-02-28.log  localhost.2019-03-03.log  localhost_access_log.2019-03-03.txt
+host-manager.2019-03-04.log  localhost.2019-03-04.log  localhost_access_log.2019-03-04.txt
+[srmweb@SRM-Tomcat-AMQ logs]$ ../bin/shutdown.sh 
+Using CATALINA_BASE:   /u01/srmweb/webapp/1#tomcat
+Using CATALINA_HOME:   /u01/srmweb/webapp/1#tomcat
+Using CATALINA_TMPDIR: /u01/srmweb/webapp/1#tomcat/temp
+Using JRE_HOME:        /usr
+Using CLASSPATH:       /u01/srmweb/webapp/1#tomcat/bin/bootstrap.jar:/u01/srmweb/webapp/1#tomcat/bin/tomcat-juli.jar
+Using CATALINA_PID:    /u01/srmweb/webapp/1#tomcat/logs/.tomcat.pid
+Tomcat stopped.
+[srmweb@SRM-Tomcat-AMQ logs]$ ls
+catalina.2019-02-28.log      localhost.2019-02-28.log  localhost_access_log.2019-02-28.txt  manager.2019-02-28.log
+catalina.2019-03-04.log      localhost.2019-03-01.log  localhost_access_log.2019-03-01.txt  manager.2019-03-04.log
+catalina.out                 localhost.2019-03-02.log  localhost_access_log.2019-03-02.txt
+host-manager.2019-02-28.log  localhost.2019-03-03.log  localhost_access_log.2019-03-03.txt
+host-manager.2019-03-04.log  localhost.2019-03-04.log  localhost_access_log.2019-03-04.txt
+[srmweb@SRM-Tomcat-AMQ logs]$ rm -rf *
+[srmweb@SRM-Tomcat-AMQ logs]$ ls
+[srmweb@SRM-Tomcat-AMQ logs]$ ../bin/startup.sh 
+Using CATALINA_BASE:   /u01/srmweb/webapp/1#tomcat
+Using CATALINA_HOME:   /u01/srmweb/webapp/1#tomcat
+Using CATALINA_TMPDIR: /u01/srmweb/webapp/1#tomcat/temp
+Using JRE_HOME:        /usr
+Using CLASSPATH:       /u01/srmweb/webapp/1#tomcat/bin/bootstrap.jar:/u01/srmweb/webapp/1#tomcat/bin/tomcat-juli.jar
+Using CATALINA_PID:    /u01/srmweb/webapp/1#tomcat/logs/.tomcat.pid
+Tomcat started.
+[srmweb@SRM-Tomcat-AMQ logs]$ tail -f catalina.out 
+三月 04, 2019 9:02:08 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-8110"]
+三月 04, 2019 9:02:08 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-9110"]
+三月 04, 2019 9:02:08 下午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 914 ms
+三月 04, 2019 9:02:08 下午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+三月 04, 2019 9:02:08 下午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.79
+三月 04, 2019 9:02:13 下午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+*********************************************
+* Aurora-1.4.2  |  jndi:/localhost/  |  SRM *
+*********************************************
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+SLF4J: Failed to load class "org.slf4j.impl.StaticMDCBinder".
+SLF4J: Defaulting to no-operation MDCAdapter implementation.
+SLF4J: See http://www.slf4j.org/codes.html#no_static_mdc_binder for further details.
+log4j:WARN No appenders could be found for logger (com.mchange.v2.log.MLog).
+log4j:WARN Please initialize the log4j system properly.
+/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib:/u01/srmweb/webapp/webRoot/WEB-INF/lib
+Added job JobDetail 'DEFAULT.rfx_to_erp':  jobClass: 'aurora.plugin.quartz.AuroraStatefulJobRunner isStateful: true isVolatile: false isDurable: false requestsRecovers: false
+Added job JobDetail 'DEFAULT.vendor_update_to_erp':  jobClass: 'aurora.plugin.quartz.AuroraStatefulJobRunner isStateful: true isVolatile: false isDurable: false requestsRecovers: false
+Added job JobDetail 'DEFAULT.downgrade_to_erp':  jobClass: 'aurora.plugin.quartz.AuroraStatefulJobRunner isStateful: true isVolatile: false isDurable: false requestsRecovers: false
+Added trigger Trigger 'DEFAULT.rfx_to_erp_st':  triggerClass: 'org.quartz.SimpleTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+Added trigger Trigger 'DEFAULT.vendor_update_to_erp_st':  triggerClass: 'org.quartz.SimpleTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+Added trigger Trigger 'DEFAULT.downgrade_to_erp_st':  triggerClass: 'org.quartz.SimpleTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+三月 04, 2019 9:02:19 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-8110"]
+三月 04, 2019 9:02:19 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-9110"]
+三月 04, 2019 9:02:19 下午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 11345 ms
+^C
+[srmweb@SRM-Tomcat-AMQ logs]$ cd ../..
+[srmweb@SRM-Tomcat-AMQ webapp]$ ls
+1#tomcat  2#tomcat  3#tomcat  amq  logs  logs_bak_20190228  uploads  webRoot  webRoot_bak_20190228  webRootJob
+[srmweb@SRM-Tomcat-AMQ webapp]$ cd 2#tomcat/logs/
+[srmweb@SRM-Tomcat-AMQ logs]$ ls
+catalina.2019-02-28.log      localhost.2019-02-28.log  localhost_access_log.2019-02-28.txt  localhost_access_log.2019-03-04.txt
+catalina.2019-03-04.log      localhost.2019-03-01.log  localhost_access_log.2019-03-01.txt  manager.2019-02-28.log
+catalina.out                 localhost.2019-03-02.log  localhost_access_log.2019-03-02.txt
+host-manager.2019-02-28.log  localhost.2019-03-04.log  localhost_access_log.2019-03-03.txt
+[srmweb@SRM-Tomcat-AMQ logs]$ ../bin/shutdown.sh 
+Using CATALINA_BASE:   /u01/srmweb/webapp/2#tomcat
+Using CATALINA_HOME:   /u01/srmweb/webapp/2#tomcat
+Using CATALINA_TMPDIR: /u01/srmweb/webapp/2#tomcat/temp
+Using JRE_HOME:        /usr
+Using CLASSPATH:       /u01/srmweb/webapp/2#tomcat/bin/bootstrap.jar:/u01/srmweb/webapp/2#tomcat/bin/tomcat-juli.jar
+Using CATALINA_PID:    /u01/srmweb/webapp/2#tomcat/logs/.tomcat.pid
+Tomcat stopped.
+[srmweb@SRM-Tomcat-AMQ logs]$ ../bin/startup.sh 
+Using CATALINA_BASE:   /u01/srmweb/webapp/2#tomcat
+Using CATALINA_HOME:   /u01/srmweb/webapp/2#tomcat
+Using CATALINA_TMPDIR: /u01/srmweb/webapp/2#tomcat/temp
+Using JRE_HOME:        /usr
+Using CLASSPATH:       /u01/srmweb/webapp/2#tomcat/bin/bootstrap.jar:/u01/srmweb/webapp/2#tomcat/bin/tomcat-juli.jar
+Using CATALINA_PID:    /u01/srmweb/webapp/2#tomcat/logs/.tomcat.pid
+Tomcat started.
+[srmweb@SRM-Tomcat-AMQ logs]$ tail -f catalina.out 
+三月 04, 2019 9:19:41 下午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["ajp-bio-9111"]
+三月 04, 2019 9:19:41 下午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["http-bio-8111"]
+三月 04, 2019 9:19:41 下午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["ajp-bio-9111"]
+OpenJDK 64-Bit Server VM warning: ignoring option PermSize=64M; support was removed in 8.0
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256M; support was removed in 8.0
+Error occurred during initialization of VM
+Initial heap size set to a larger value than the maximum heap size
+^C
+[srmweb@SRM-Tomcat-AMQ logs]$ vi ../bin/startup.sh 
+[srmweb@SRM-Tomcat-AMQ logs]$ ../bin/shutdown.sh 
+Using CATALINA_BASE:   /u01/srmweb/webapp/2#tomcat
+Using CATALINA_HOME:   /u01/srmweb/webapp/2#tomcat
+Using CATALINA_TMPDIR: /u01/srmweb/webapp/2#tomcat/temp
+Using JRE_HOME:        /usr
+Using CLASSPATH:       /u01/srmweb/webapp/2#tomcat/bin/bootstrap.jar:/u01/srmweb/webapp/2#tomcat/bin/tomcat-juli.jar
+Using CATALINA_PID:    /u01/srmweb/webapp/2#tomcat/logs/.tomcat.pid
+PID file found but no matching process was found. Stop aborted.
+[srmweb@SRM-Tomcat-AMQ logs]$ ls
+catalina.2019-02-28.log      localhost.2019-02-28.log  localhost_access_log.2019-02-28.txt  localhost_access_log.2019-03-04.txt
+catalina.2019-03-04.log      localhost.2019-03-01.log  localhost_access_log.2019-03-01.txt  manager.2019-02-28.log
+catalina.out                 localhost.2019-03-02.log  localhost_access_log.2019-03-02.txt
+host-manager.2019-02-28.log  localhost.2019-03-04.log  localhost_access_log.2019-03-03.txt
+[srmweb@SRM-Tomcat-AMQ logs]$ ps aux |grep srmweb |grep tomcat
+srmweb    3145  7.2 22.1 6986292 1772972 pts/0 Sl   21:02   1:23 /usr/bin/java -Djava.util.logging.config.file=/u01/srmweb/webapp/1#tomcat/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Xmx3072m -Xms3072m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -XX:PermSize=64M -XX:MaxPermSize=256M -Djdk.tls.ephemeralDHKeySize=2048 -Djava.endorsed.dirs=/u01/srmweb/webapp/1#tomcat/endorsed -classpath /u01/srmweb/webapp/1#tomcat/bin/bootstrap.jar:/u01/srmweb/webapp/1#tomcat/bin/tomcat-juli.jar -Dcatalina.base=/u01/srmweb/webapp/1#tomcat -Dcatalina.home=/u01/srmweb/webapp/1#tomcat -Djava.io.tmpdir=/u01/srmweb/webapp/1#tomcat/temp org.apache.catalina.startup.Bootstrap start
+srmweb    3872  0.0  0.0 112664   972 pts/0    S+   21:21   0:00 grep --color=auto tomcat
+srmweb   19087  0.4 15.1 4768284 1215640 ?     Sl   07:55   4:00 /usr/bin/java -Djava.util.logging.config.file=/u01/srmweb/webapp/3#tomcat/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Xmx1024m -Xms1024m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -XX:PermSize=64M -XX:MaxPermSize=256M -Djdk.tls.ephemeralDHKeySize=2048 -Djava.endorsed.dirs=/u01/srmweb/webapp/3#tomcat/endorsed -classpath /u01/srmweb/webapp/3#tomcat/bin/bootstrap.jar:/u01/srmweb/webapp/3#tomcat/bin/tomcat-juli.jar -Dcatalina.base=/u01/srmweb/webapp/3#tomcat -Dcatalina.home=/u01/srmweb/webapp/3#tomcat -Djava.io.tmpdir=/u01/srmweb/webapp/3#tomcat/temp org.apache.catalina.startup.Bootstrap start
+[srmweb@SRM-Tomcat-AMQ logs]$ ls
+catalina.2019-02-28.log      localhost.2019-02-28.log  localhost_access_log.2019-02-28.txt  localhost_access_log.2019-03-04.txt
+catalina.2019-03-04.log      localhost.2019-03-01.log  localhost_access_log.2019-03-01.txt  manager.2019-02-28.log
+catalina.out                 localhost.2019-03-02.log  localhost_access_log.2019-03-02.txt
+host-manager.2019-02-28.log  localhost.2019-03-04.log  localhost_access_log.2019-03-03.txt
+[srmweb@SRM-Tomcat-AMQ logs]$ rm *
+[srmweb@SRM-Tomcat-AMQ logs]$ ls
+[srmweb@SRM-Tomcat-AMQ logs]$ ../bin/startup.sh 
+Using CATALINA_BASE:   /u01/srmweb/webapp/2#tomcat
+Using CATALINA_HOME:   /u01/srmweb/webapp/2#tomcat
+Using CATALINA_TMPDIR: /u01/srmweb/webapp/2#tomcat/temp
+Using JRE_HOME:        /usr
+Using CLASSPATH:       /u01/srmweb/webapp/2#tomcat/bin/bootstrap.jar:/u01/srmweb/webapp/2#tomcat/bin/tomcat-juli.jar
+Using CATALINA_PID:    /u01/srmweb/webapp/2#tomcat/logs/.tomcat.pid
+Existing PID file found during start.
+Removing/clearing stale PID file.
+Tomcat started.
+[srmweb@SRM-Tomcat-AMQ logs]$ tail -f catalina.out 
+三月 04, 2019 9:21:42 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-8111"]
+三月 04, 2019 9:21:42 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-9111"]
+三月 04, 2019 9:21:42 下午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 531 ms
+三月 04, 2019 9:21:42 下午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+三月 04, 2019 9:21:42 下午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.79
+三月 04, 2019 9:21:45 下午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+*********************************************
+* Aurora-1.4.2  |  jndi:/localhost/  |  SRM *
+*********************************************
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+SLF4J: Failed to load class "org.slf4j.impl.StaticMDCBinder".
+SLF4J: Defaulting to no-operation MDCAdapter implementation.
+SLF4J: See http://www.slf4j.org/codes.html#no_static_mdc_binder for further details.
+log4j:WARN No appenders could be found for logger (com.mchange.v2.log.MLog).
+log4j:WARN Please initialize the log4j system properly.
+/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib:/u01/srmweb/webapp/webRoot/WEB-INF/lib
+Added job JobDetail 'DEFAULT.rfx_to_erp':  jobClass: 'aurora.plugin.quartz.AuroraStatefulJobRunner isStateful: true isVolatile: false isDurable: false requestsRecovers: false
+Added job JobDetail 'DEFAULT.vendor_update_to_erp':  jobClass: 'aurora.plugin.quartz.AuroraStatefulJobRunner isStateful: true isVolatile: false isDurable: false requestsRecovers: false
+Added job JobDetail 'DEFAULT.downgrade_to_erp':  jobClass: 'aurora.plugin.quartz.AuroraStatefulJobRunner isStateful: true isVolatile: false isDurable: false requestsRecovers: false
+Added trigger Trigger 'DEFAULT.rfx_to_erp_st':  triggerClass: 'org.quartz.SimpleTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+Added trigger Trigger 'DEFAULT.vendor_update_to_erp_st':  triggerClass: 'org.quartz.SimpleTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+Added trigger Trigger 'DEFAULT.downgrade_to_erp_st':  triggerClass: 'org.quartz.SimpleTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+三月 04, 2019 9:21:50 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-8111"]
+三月 04, 2019 9:21:50 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-9111"]
+三月 04, 2019 9:21:50 下午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 8195 ms
+^C
+[srmweb@SRM-Tomcat-AMQ logs]$ cd ../../3#tomcat/logs/
+[srmweb@SRM-Tomcat-AMQ logs]$ ls
+catalina.2018-03-08.log  catalina.2019-03-04.log      host-manager.2019-03-04.log  localhost_access_log.2018-03-08.txt  manager.2018-03-20.log
+catalina.2018-03-20.log  catalina.out                 localhost.2018-03-08.log     localhost_access_log.2018-03-20.txt  manager.2018-03-21.log
+catalina.2018-03-21.log  host-manager.2018-03-08.log  localhost.2018-03-20.log     localhost_access_log.2018-03-21.txt  manager.2018-03-22.log
+catalina.2018-03-22.log  host-manager.2018-03-20.log  localhost.2018-03-21.log     localhost_access_log.2018-03-22.txt  manager.2018-03-23.log
+catalina.2018-03-23.log  host-manager.2018-03-21.log  localhost.2018-03-22.log     localhost_access_log.2018-03-23.txt  manager.2018-03-26.log
+catalina.2018-03-26.log  host-manager.2018-03-22.log  localhost.2018-03-23.log     localhost_access_log.2018-03-26.txt  manager.2018-04-06.log
+catalina.2018-04-06.log  host-manager.2018-03-23.log  localhost.2018-03-26.log     localhost_access_log.2018-04-06.txt  manager.2018-04-11.log
+catalina.2018-04-11.log  host-manager.2018-03-26.log  localhost.2018-04-06.log     localhost_access_log.2018-04-11.txt  manager.2018-05-03.log
+catalina.2018-04-30.log  host-manager.2018-04-06.log  localhost.2018-04-11.log     localhost_access_log.2018-05-03.txt  manager.2018-05-07.log
+catalina.2018-05-03.log  host-manager.2018-04-11.log  localhost.2018-05-03.log     localhost_access_log.2018-05-07.txt  manager.2018-05-22.log
+catalina.2018-05-07.log  host-manager.2018-05-03.log  localhost.2018-05-07.log     localhost_access_log.2018-05-22.txt  manager.2018-06-27.log
+catalina.2018-05-22.log  host-manager.2018-05-07.log  localhost.2018-05-22.log     localhost_access_log.2018-06-27.txt  manager.2018-07-29.log
+catalina.2018-06-27.log  host-manager.2018-05-22.log  localhost.2018-06-27.log     localhost_access_log.2018-07-29.txt  manager.2018-09-16.log
+catalina.2018-07-28.log  host-manager.2018-06-27.log  localhost.2018-07-29.log     localhost_access_log.2018-09-16.txt  manager.2018-10-29.log
+catalina.2018-07-29.log  host-manager.2018-07-29.log  localhost.2018-09-16.log     localhost_access_log.2018-10-29.txt  manager.2018-11-27.log
+catalina.2018-09-16.log  host-manager.2018-09-16.log  localhost.2018-10-29.log     localhost_access_log.2018-11-27.txt  manager.2018-12-15.log
+catalina.2018-10-29.log  host-manager.2018-10-29.log  localhost.2018-11-27.log     localhost_access_log.2018-12-15.txt  manager.2018-12-27.log
+catalina.2018-11-27.log  host-manager.2018-11-27.log  localhost.2018-12-15.log     localhost_access_log.2018-12-27.txt  manager.2019-01-03.log
+catalina.2018-12-15.log  host-manager.2018-12-15.log  localhost.2018-12-27.log     localhost_access_log.2019-01-03.txt  manager.2019-01-28.log
+catalina.2018-12-27.log  host-manager.2018-12-27.log  localhost.2019-01-03.log     localhost_access_log.2019-01-28.txt  manager.2019-02-24.log
+catalina.2019-01-03.log  host-manager.2019-01-03.log  localhost.2019-01-28.log     localhost_access_log.2019-02-24.txt  manager.2019-02-28.log
+catalina.2019-01-28.log  host-manager.2019-01-28.log  localhost.2019-02-24.log     localhost_access_log.2019-02-28.txt  manager.2019-03-04.log
+catalina.2019-02-24.log  host-manager.2019-02-24.log  localhost.2019-02-28.log     localhost_access_log.2019-03-04.txt
+catalina.2019-02-28.log  host-manager.2019-02-28.log  localhost.2019-03-04.log     manager.2018-03-08.log
+[srmweb@SRM-Tomcat-AMQ logs]$ ../bin/shutdown.sh 
+Using CATALINA_BASE:   /u01/srmweb/webapp/3#tomcat
+Using CATALINA_HOME:   /u01/srmweb/webapp/3#tomcat
+Using CATALINA_TMPDIR: /u01/srmweb/webapp/3#tomcat/temp
+Using JRE_HOME:        /usr
+Using CLASSPATH:       /u01/srmweb/webapp/3#tomcat/bin/bootstrap.jar:/u01/srmweb/webapp/3#tomcat/bin/tomcat-juli.jar
+Using CATALINA_PID:    /u01/srmweb/webapp/3#tomcat/logs/.tomcat.pid
+Tomcat stopped.
+[srmweb@SRM-Tomcat-AMQ logs]$ ls
+catalina.2018-03-08.log  catalina.2019-03-04.log      host-manager.2019-03-04.log  localhost_access_log.2018-03-08.txt  manager.2018-03-20.log
+catalina.2018-03-20.log  catalina.out                 localhost.2018-03-08.log     localhost_access_log.2018-03-20.txt  manager.2018-03-21.log
+catalina.2018-03-21.log  host-manager.2018-03-08.log  localhost.2018-03-20.log     localhost_access_log.2018-03-21.txt  manager.2018-03-22.log
+catalina.2018-03-22.log  host-manager.2018-03-20.log  localhost.2018-03-21.log     localhost_access_log.2018-03-22.txt  manager.2018-03-23.log
+catalina.2018-03-23.log  host-manager.2018-03-21.log  localhost.2018-03-22.log     localhost_access_log.2018-03-23.txt  manager.2018-03-26.log
+catalina.2018-03-26.log  host-manager.2018-03-22.log  localhost.2018-03-23.log     localhost_access_log.2018-03-26.txt  manager.2018-04-06.log
+catalina.2018-04-06.log  host-manager.2018-03-23.log  localhost.2018-03-26.log     localhost_access_log.2018-04-06.txt  manager.2018-04-11.log
+catalina.2018-04-11.log  host-manager.2018-03-26.log  localhost.2018-04-06.log     localhost_access_log.2018-04-11.txt  manager.2018-05-03.log
+catalina.2018-04-30.log  host-manager.2018-04-06.log  localhost.2018-04-11.log     localhost_access_log.2018-05-03.txt  manager.2018-05-07.log
+catalina.2018-05-03.log  host-manager.2018-04-11.log  localhost.2018-05-03.log     localhost_access_log.2018-05-07.txt  manager.2018-05-22.log
+catalina.2018-05-07.log  host-manager.2018-05-03.log  localhost.2018-05-07.log     localhost_access_log.2018-05-22.txt  manager.2018-06-27.log
+catalina.2018-05-22.log  host-manager.2018-05-07.log  localhost.2018-05-22.log     localhost_access_log.2018-06-27.txt  manager.2018-07-29.log
+catalina.2018-06-27.log  host-manager.2018-05-22.log  localhost.2018-06-27.log     localhost_access_log.2018-07-29.txt  manager.2018-09-16.log
+catalina.2018-07-28.log  host-manager.2018-06-27.log  localhost.2018-07-29.log     localhost_access_log.2018-09-16.txt  manager.2018-10-29.log
+catalina.2018-07-29.log  host-manager.2018-07-29.log  localhost.2018-09-16.log     localhost_access_log.2018-10-29.txt  manager.2018-11-27.log
+catalina.2018-09-16.log  host-manager.2018-09-16.log  localhost.2018-10-29.log     localhost_access_log.2018-11-27.txt  manager.2018-12-15.log
+catalina.2018-10-29.log  host-manager.2018-10-29.log  localhost.2018-11-27.log     localhost_access_log.2018-12-15.txt  manager.2018-12-27.log
+catalina.2018-11-27.log  host-manager.2018-11-27.log  localhost.2018-12-15.log     localhost_access_log.2018-12-27.txt  manager.2019-01-03.log
+catalina.2018-12-15.log  host-manager.2018-12-15.log  localhost.2018-12-27.log     localhost_access_log.2019-01-03.txt  manager.2019-01-28.log
+catalina.2018-12-27.log  host-manager.2018-12-27.log  localhost.2019-01-03.log     localhost_access_log.2019-01-28.txt  manager.2019-02-24.log
+catalina.2019-01-03.log  host-manager.2019-01-03.log  localhost.2019-01-28.log     localhost_access_log.2019-02-24.txt  manager.2019-02-28.log
+catalina.2019-01-28.log  host-manager.2019-01-28.log  localhost.2019-02-24.log     localhost_access_log.2019-02-28.txt  manager.2019-03-04.log
+catalina.2019-02-24.log  host-manager.2019-02-24.log  localhost.2019-02-28.log     localhost_access_log.2019-03-04.txt
+catalina.2019-02-28.log  host-manager.2019-02-28.log  localhost.2019-03-04.log     manager.2018-03-08.log
+[srmweb@SRM-Tomcat-AMQ logs]$ rm *
+[srmweb@SRM-Tomcat-AMQ logs]$ ls
+[srmweb@SRM-Tomcat-AMQ logs]$ ../bin/startup.sh 
+Using CATALINA_BASE:   /u01/srmweb/webapp/3#tomcat
+Using CATALINA_HOME:   /u01/srmweb/webapp/3#tomcat
+Using CATALINA_TMPDIR: /u01/srmweb/webapp/3#tomcat/temp
+Using JRE_HOME:        /usr
+Using CLASSPATH:       /u01/srmweb/webapp/3#tomcat/bin/bootstrap.jar:/u01/srmweb/webapp/3#tomcat/bin/tomcat-juli.jar
+Using CATALINA_PID:    /u01/srmweb/webapp/3#tomcat/logs/.tomcat.pid
+Tomcat started.
+[srmweb@SRM-Tomcat-AMQ logs]$ tail -f catalina.out 
+三月 04, 2019 9:22:06 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-8112"]
+三月 04, 2019 9:22:06 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-9112"]
+三月 04, 2019 9:22:06 下午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 439 ms
+三月 04, 2019 9:22:06 下午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+三月 04, 2019 9:22:06 下午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.79
+三月 04, 2019 9:22:10 下午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+*********************************************
+* Aurora-1.4.2  |  jndi:/localhost/  |  SRM *
+*********************************************
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+SLF4J: Failed to load class "org.slf4j.impl.StaticMDCBinder".
+SLF4J: Defaulting to no-operation MDCAdapter implementation.
+SLF4J: See http://www.slf4j.org/codes.html#no_static_mdc_binder for further details.
+log4j:WARN No appenders could be found for logger (com.mchange.v2.log.MLog).
+log4j:WARN Please initialize the log4j system properly.
+/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib:/u01/srmweb/webapp/webRootJob/WEB-INF/lib
+Added job JobDetail 'DEFAULT.rfx_to_erp':  jobClass: 'aurora.plugin.quartz.AuroraStatefulJobRunner isStateful: true isVolatile: false isDurable: false requestsRecovers: false
+Added job JobDetail 'DEFAULT.vendor_update_to_erp':  jobClass: 'aurora.plugin.quartz.AuroraStatefulJobRunner isStateful: true isVolatile: false isDurable: false requestsRecovers: false
+Added job JobDetail 'DEFAULT.pur_po__to_erp_tiem':  jobClass: 'aurora.plugin.quartz.AuroraStatefulJobRunner isStateful: true isVolatile: false isDurable: false requestsRecovers: false
+Added job JobDetail 'DEFAULT.pur_po_to_erp_time_subsection':  jobClass: 'aurora.plugin.quartz.AuroraStatefulJobRunner isStateful: true isVolatile: false isDurable: false requestsRecovers: false
+Added trigger Trigger 'DEFAULT.rfx_to_erp_st':  triggerClass: 'org.quartz.SimpleTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+Added trigger Trigger 'DEFAULT.vendor_update_to_erp_st':  triggerClass: 'org.quartz.SimpleTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+Added trigger Trigger 'DEFAULT.pur_po__to_erp_tiem_st':  triggerClass: 'org.quartz.SimpleTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+Added trigger Trigger 'DEFAULT.pur_po_to_erp_time_subsection_st':  triggerClass: 'org.quartz.SimpleTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+三月 04, 2019 9:22:16 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-8112"]
+三月 04, 2019 9:22:16 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-9112"]
+三月 04, 2019 9:22:16 下午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 9939 ms
